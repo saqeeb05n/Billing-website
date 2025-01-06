@@ -1,0 +1,371 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.landing-page {
+  text-align: center;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.landing-logo {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.landing-heading {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.landing-description {
+  font-size: 1rem;
+  color: #7f8c8d;
+  margin-bottom: 20px;
+}
+
+.landing-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-login {
+  background-color: #3498db;
+  color: white;
+}
+
+.btn-login:hover {
+  background-color: #2980b9;
+}
+
+.btn-register {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.btn-register:hover {
+  background-color: #27ae60;
+}
+/* Register Form Styling */
+.form-container {
+  width: 400px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.form-container h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-container input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-container input:focus {
+  border-color: #2ecc71; /* Consistent with the "Register" button color */
+}
+
+.form-container button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-container button[type="submit"] {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.form-container button[type="submit"]:hover {
+  background-color: #27ae60;
+}
+
+.form-container button:nth-child(2) {
+  background-color: #7f8c8d;
+  color: white;
+  margin-top: 10px;
+}
+
+.form-container button:nth-child(2):hover {
+  background-color: #34495e;
+}
+/* Navbar Styling */
+/* Navbar styling */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2c3e50;
+  color: white;
+  z-index: 1000; /* Ensure it appears above other elements */
+  padding: 15px 30px;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar header (logo) */
+nav h1 {
+  display: inline-block;
+  font-size: 24px;
+  color: #ecf0f1;
+  margin-right: 40px;
+  font-weight: bold;
+}
+
+/* Styling for the navigation list */
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end; /* Align links to the right */
+  align-items: center;
+}
+
+/* Styling for each navigation item */
+nav ul li {
+  margin-left: 30px; /* Added left margin to separate links */
+}
+
+/* Styling for each link */
+nav ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+nav ul li a:hover {
+  color: #3498db;
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Active link styling */
+nav ul li a.active {
+  color: #1abc9c; /* Green color for active link */
+  font-weight: bold;
+  border-bottom: 2px solid #1abc9c; /* Underline effect for active link */
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+  nav {
+    padding: 15px 20px;
+  }
+
+  nav h1 {
+    font-size: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/*---------*/
+.invoice-history-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.invoice-history-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.invoice-table th,
+.invoice-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.invoice-table th {
+  background-color: #4caf50;
+  color: white;
+  text-transform: uppercase;
+}
+
+.invoice-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.invoice-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.invoice-table td ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.invoice-table td ul li {
+  margin: 4px 0;
+}
+
+.invoice-table td {
+  vertical-align: top;
+}
+/*-------------------store details -*/
+.store-details-container {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box; /* Ensures padding doesn't affect the width of the container */
+}
+
+.store-details-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.store-details-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.store-details-container input,
+.store-details-container textarea {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.store-details-container input:focus,
+.store-details-container textarea:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 6px rgba(76, 175, 80, 0.2);
+  outline: none;
+}
+
+.store-details-container textarea {
+  resize: none;
+  min-height: 100px;
+}
+
+.store-details-container input[type="text"] {
+  height: 40px;
+}
+
+.store-details-container button {
+  padding: 12px 20px;
+  font-size: 18px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.store-details-container button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+.store-details-container button:active {
+  background-color: #3e8e41;
+  transform: translateY(0);
+}
+
+.store-details-container button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.store-details-container .logo-preview {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.store-details-container .logo-preview img {
+  max-width: 150px;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.store-details-container .logo-preview p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #777;
+}
+/*-------invoice ------*/
+
+
